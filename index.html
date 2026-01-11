@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WBS PlayStation | Rental PS</title>
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0a0f27;
+  color:#fff;
+}
+a{text-decoration:none;color:inherit}
+
+/* NAVBAR */
+header{
+  background:#0a0f27;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+nav{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+nav .logo{
+  font-size:1.8rem;
+  font-weight:700;
+  color:#38bdf8;
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+nav ul li{
+  font-weight:500;
+}
+nav ul li:hover{
+  color:#38bdf8;
+}
+nav .btn-wa{
+  background:#22c55e;
+  padding:10px 22px;
+  border-radius:30px;
+  font-weight:600;
+  color:#020617;
+  transition:.3s;
+}
+nav .btn-wa:hover{
+  transform:scale(1.05)
+}
+
+/* HERO */
+.hero{
+  background:url('images/hero-bg.jpg') center/cover no-repeat;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 20px;
+}
+.hero h1{
+  font-size:3rem;
+  color:#38bdf8;
+  text-shadow:0 10px 30px rgba(0,0,0,.7);
+}
+.hero p{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#cbd5f5;
+}
+
+/* SECTIONS */
+section{
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.features .card{
+  background:rgba(255,255,255,.1);
+  border-radius:20px;
+  padding:30px;
+  text-align:center;
+  transition:.3s;
+}
+.features .card:hover{
+  transform:scale(1.05);
+  background:rgba(255,255,255,.15);
+}
+
+/* PACKAGES */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.packages .box{
+  background:rgba(255,255,255,.1);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  transition:.3s;
+}
+.packages .box:hover{
+  transform:translateY(-10px);
+  background:rgba(255,255,255,.15);
+}
+.packages .box h3{
+  font-size:1.4rem;
+  margin-bottom:10px;
+  color:#38bdf8;
+}
+.packages .price{
+  font-size:2.2rem;
+  font-weight:700;
+  margin:10px 0;
+  color:#22c55e;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.gallery img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:.9rem;
+  color:#94a3b8;
+  background:#020428;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav ul{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <div class="logo">🎮 WBS PlayStation</div>
+  <ul>
+    <li><a href="#features">Kenapa Kami</a></li>
+    <li><a href="#packages">Paket & Harga</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <a class="btn-wa"
+     href="https://wa.me/6282320956424?text=Halo%20admin%20WBS%20PlayStation,%20saya%20mau%20booking"
+     target="_blank">Chat WA</a>
+</nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Selamat Datang di WBS PlayStation</h1>
+    <p>Tempat Main PS Paling Seru & Nyaman</p>
+  </div>
+</div>
+
+<section id="features">
+<h2>Kenapa Pilih Kami?</h2>
+<div class="features">
+  <div class="card">✔ Ruangan AC & Bersih</div>
+  <div class="card">✔ TV LED Besar</div>
+  <div class="card">✔ Stick Original & Terawat</div>
+  <div class="card">✔ Harga Terjangkau</div>
+  <div class="card">✔ WiFi Gratis</div>
+  <div class="card">✔ Cocok untuk Semua Usia</div>
+</div>
+</section>
+
+<section id="packages">
+<h2>Paket & Harga</h2>
+<div class="packages">
+  <div class="box">
+    <h3>PS3 6 Jam</h3>
+    <div class="price">Rp 20.000</div>
+  </div>
+  <div class="box">
+    <h3>PS3 + TV 6 Jam</h3>
+    <div class="price">Rp 30.000</div>
+  </div>
+  <div class="box">
+    <h3>PS3 + TV 12 Jam</h3>
+    <div class="price">Rp 50.000</div>
+  </div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Galeri Foto</h2>
+<div class="gallery">
+  <img src="images/foto1.jpg" alt="Foto PS">
+  <img src="images/foto2.jpg" alt="Suasana">
+  <img src="images/foto3.jpg" alt="Teman Main">
+  <img src="images/foto4.jpg" alt="Game Seru">
+</div>
+</section>
+
+<section id="contact">
+<h2>Kontak & Lokasi</h2>
+<p>📍 Kp Asem, Ds Julang RT 14 • 📞 +62 823-2095-6424</p>
+<iframe 
+  src="https://www.google.com/maps?q=Julang&output=embed">
+</iframe>
+</section>
+
+<footer>
+© 2026 WBS PlayStation
+</footer>
+
+</body>
+</html>
