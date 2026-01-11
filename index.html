@@ -32,9 +32,29 @@ nav{
   justify-content:space-between;
   align-items:center;
 }
-.logo{font-size:1.8rem;font-weight:700;color:#38bdf8}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:1.6rem;
+  font-weight:700;
+  color:#38bdf8;
+}
+.logo img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 0 20px rgba(56,189,248,.9);
+  transition:.5s;
+}
+.logo img:hover{
+  transform:rotateY(360deg) scale(1.1);
+}
+
 nav ul{display:flex;gap:20px;list-style:none}
 nav ul li:hover{color:#38bdf8}
+
 .btn-wa{
   background:#22c55e;
   padding:10px 22px;
@@ -141,7 +161,10 @@ footer{
 
 <header>
 <nav>
-  <div class="logo">🎮 WBS PlayStation</div>
+  <div class="logo">
+    <img src="2.jpg" alt="Logo WBS PlayStation">
+    <span>WBS PlayStation</span>
+  </div>
   <ul>
     <li><a href="#features">Fasilitas</a></li>
     <li><a href="#packages">Harga</a></li>
@@ -155,7 +178,7 @@ footer{
 <div class="hero">
   <div>
     <h1>WBS PlayStation</h1>
-    <p>Tempat Main PS Seru & Nyaman</p>
+    <p>Tempat Main PS Seru, Nyaman & Ramah Keluarga</p>
     <p>⏰ Buka Setiap Hari <b>09.00 – 01.00</b></p>
   </div>
 </div>
