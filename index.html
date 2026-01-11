@@ -35,7 +35,7 @@ nav{
 .logo{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   font-size:1.6rem;
   font-weight:700;
   color:#38bdf8;
@@ -44,17 +44,10 @@ nav{
   width:45px;
   height:45px;
   border-radius:50%;
-  object-fit:cover;
-  box-shadow:0 0 20px rgba(56,189,248,.9);
-  transition:.5s;
+  box-shadow:0 5px 15px rgba(0,0,0,.6);
 }
-.logo img:hover{
-  transform:rotateY(360deg) scale(1.1);
-}
-
 nav ul{display:flex;gap:20px;list-style:none}
 nav ul li:hover{color:#38bdf8}
-
 .btn-wa{
   background:#22c55e;
   padding:10px 22px;
@@ -129,9 +122,7 @@ h2{
   box-shadow:0 20px 40px rgba(0,0,0,.5);
   transition:.4s;
 }
-.gallery img:hover{
-  transform:scale(1.05);
-}
+.gallery img:hover{transform:scale(1.05)}
 
 /* CONTACT */
 .contact-box{
@@ -142,14 +133,20 @@ h2{
   box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
-/* FOOTER */
-footer{
-  background:#020428;
-  text-align:center;
-  padding:20px;
-  color:#94a3b8;
+/* FLOAT WA */
+.wa-float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#22c55e;
+  color:#022c22;
+  padding:15px 25px;
+  border-radius:50px;
+  font-weight:700;
+  box-shadow:0 15px 40px rgba(34,197,94,.8);
 }
 
+/* RESPONSIVE */
 @media(max-width:768px){
   nav ul{display:none}
   .hero h1{font-size:2.2rem}
@@ -162,8 +159,8 @@ footer{
 <header>
 <nav>
   <div class="logo">
-    <img src="2.jpg" alt="Logo WBS PlayStation">
-    <span>WBS PlayStation</span>
+    <img src="2.jpg" alt="Logo WBS">
+    WBS PlayStation
   </div>
   <ul>
     <li><a href="#features">Fasilitas</a></li>
@@ -171,14 +168,16 @@ footer{
     <li><a href="#gallery">Galeri</a></li>
     <li><a href="#contact">Kontak</a></li>
   </ul>
-  <a class="btn-wa" href="https://wa.me/6282320956424" target="_blank">Chat WA</a>
+  <a class="btn-wa"
+href="https://wa.me/6282320956424?text=Halo%20Admin%20WBS%20PlayStation%20%F0%9F%91%8B%0A%0ASaya%20mau%20booking%20main%20PS%0A%0A%F0%9F%8E%AE%20Nomor%20PS%20:%0A%F0%9F%93%85%20Tanggal%20:%0A%E2%8F%B0%20Jam%20Mulai%20:%0A%E2%8F%B3%20Total%20Jam%20:%0A%0ATerima%20kasih%20%F0%9F%99%8F"
+target="_blank">Chat WA</a>
 </nav>
 </header>
 
 <div class="hero">
   <div>
     <h1>WBS PlayStation</h1>
-    <p>Tempat Main PS Seru, Nyaman & Ramah Keluarga</p>
+    <p>Tempat Main PS Seru & Nyaman</p>
     <p>⏰ Buka Setiap Hari <b>09.00 – 01.00</b></p>
   </div>
 </div>
@@ -234,13 +233,18 @@ footer{
 </div>
 
 <br>
-<iframe src="https://www.google.com/maps?q=Kp%20Asem%20Julang%20Cikande&output=embed"
+<iframe
+src="https://www.google.com/maps?q=Kp%20Asem%20Julang%20Cikande&output=embed"
 width="100%" height="300" style="border:0;border-radius:15px;"></iframe>
 </section>
 
 <footer>
 © 2026 WBS PlayStation
 </footer>
+
+<a class="wa-float"
+href="https://wa.me/6282320956424?text=Halo%20Admin%20WBS%20PlayStation%20%F0%9F%91%8B%0A%0ASaya%20mau%20booking%20main%20PS%0A%0A%F0%9F%8E%AE%20Nomor%20PS%20:%0A%F0%9F%93%85%20Tanggal%20:%0A%E2%8F%B0%20Jam%20Mulai%20:%0A%E2%8F%B3%20Total%20Jam%20:%0A%0ATerima%20kasih%20%F0%9F%99%8F"
+target="_blank">💬 WA</a>
 
 </body>
 </html>
