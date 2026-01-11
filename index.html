@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WBS PlayStation | Rental PS</title>
 
-<!-- FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -44,22 +43,13 @@ nav ul{
   display:flex;
   gap:20px;
 }
-nav ul li{
-  font-weight:500;
-}
-nav ul li:hover{
-  color:#38bdf8;
-}
+nav ul li:hover{color:#38bdf8}
 nav .btn-wa{
   background:#22c55e;
   padding:10px 22px;
   border-radius:30px;
   font-weight:600;
   color:#020617;
-  transition:.3s;
-}
-nav .btn-wa:hover{
-  transform:scale(1.05)
 }
 
 /* HERO */
@@ -70,83 +60,45 @@ nav .btn-wa:hover{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:0 20px;
 }
-.hero h1{
-  font-size:3rem;
-  color:#38bdf8;
-  text-shadow:0 10px 30px rgba(0,0,0,.7);
-}
-.hero p{
-  margin-top:15px;
-  font-size:1.2rem;
-  color:#cbd5f5;
-}
+.hero h1{font-size:3rem;color:#38bdf8}
+.hero p{margin-top:10px;color:#cbd5f5}
 
-/* SECTIONS */
+/* SECTION */
 section{
   padding:90px 20px;
   max-width:1100px;
   margin:auto;
 }
+h2{text-align:center;margin-bottom:40px;color:#38bdf8}
 
 /* FEATURES */
-.features{
+.features,.packages,.gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:25px;
 }
-.features .card{
+.card,.box{
   background:rgba(255,255,255,.1);
   border-radius:20px;
   padding:30px;
   text-align:center;
-  transition:.3s;
 }
-.features .card:hover{
-  transform:scale(1.05);
-  background:rgba(255,255,255,.15);
-}
-
-/* PACKAGES */
-.packages{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-}
-.packages .box{
-  background:rgba(255,255,255,.1);
-  padding:25px;
-  border-radius:20px;
-  text-align:center;
-  transition:.3s;
-}
-.packages .box:hover{
-  transform:translateY(-10px);
-  background:rgba(255,255,255,.15);
-}
-.packages .box h3{
-  font-size:1.4rem;
-  margin-bottom:10px;
-  color:#38bdf8;
-}
-.packages .price{
-  font-size:2.2rem;
-  font-weight:700;
-  margin:10px 0;
-  color:#22c55e;
-}
+.price{font-size:2rem;color:#22c55e;font-weight:700}
 
 /* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
-}
 .gallery img{
   width:100%;
   border-radius:20px;
-  box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+/* CONTACT */
+.contact-box{
+  background:rgba(255,255,255,.1);
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  line-height:1.8;
 }
 
 /* FOOTER */
@@ -154,11 +106,10 @@ footer{
   text-align:center;
   padding:20px;
   font-size:.9rem;
-  color:#94a3b8;
   background:#020428;
+  color:#94a3b8;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
   nav ul{display:none}
 }
@@ -171,8 +122,8 @@ footer{
 <nav>
   <div class="logo">🎮 WBS PlayStation</div>
   <ul>
-    <li><a href="#features">Kenapa Kami</a></li>
-    <li><a href="#packages">Paket & Harga</a></li>
+    <li><a href="#features">Fasilitas</a></li>
+    <li><a href="#packages">Harga</a></li>
     <li><a href="#gallery">Galeri</a></li>
     <li><a href="#contact">Kontak</a></li>
   </ul>
@@ -185,19 +136,20 @@ footer{
 <div class="hero">
   <div>
     <h1>Selamat Datang di WBS PlayStation</h1>
-    <p>Tempat Main PS Paling Seru & Nyaman</p>
+    <p>Tempat Main PS Seru, Nyaman & Ramah Keluarga</p>
+    <p>⏰ Buka Setiap Hari <b>09.00 – 01.00</b></p>
   </div>
 </div>
 
 <section id="features">
-<h2>Kenapa Pilih Kami?</h2>
+<h2>Fasilitas Kami</h2>
 <div class="features">
   <div class="card">✔ Ruangan AC & Bersih</div>
   <div class="card">✔ TV LED Besar</div>
   <div class="card">✔ Stick Original & Terawat</div>
-  <div class="card">✔ Harga Terjangkau</div>
   <div class="card">✔ WiFi Gratis</div>
-  <div class="card">✔ Cocok untuk Semua Usia</div>
+  <div class="card">✔ Ramah Anak & Keluarga</div>
+  <div class="card">✔ Nyaman untuk Nongkrong</div>
 </div>
 </section>
 
@@ -222,18 +174,29 @@ footer{
 <section id="gallery">
 <h2>Galeri Foto</h2>
 <div class="gallery">
-  <img src="1.jpg" alt="Foto PS">
-  <img src="2.jpg" alt="Suasana">
-  <img src="3.jpg" alt="Teman Main">
-  <img src="4.jpg" alt="Game Seru">
+  <img src="1.jpg">
+  <img src="2.jpg">
+  <img src="3.jpg">
+  <img src="4.jpg">
 </div>
 </section>
 
 <section id="contact">
 <h2>Kontak & Lokasi</h2>
-<p>📍 Kp Asem, Ds Julang RT 14 • 📞 +62 823-2095-6424</p>
+<div class="contact-box">
+  <p>📍 <b>Alamat:</b><br>
+  Kp. Asem, Ds. Julang Rt 14 Rw 04<br>
+  Kec. Cikande, Kab. Serang</p>
+
+  <p>⏰ <b>Jam Buka:</b> 09.00 – 01.00</p>
+  <p>📞 <b>WhatsApp:</b> +62 823-2095-6424</p>
+  <p>📸 <b>Instagram:</b> @wbsplaystation</p>
+</div>
+
+<br>
 <iframe 
-  src="https://www.google.com/maps?q=Julang&output=embed">
+  src="https://www.google.com/maps?q=Kp%20Asem%20Julang%20Cikande&output=embed"
+  width="100%" height="300" style="border:0;border-radius:15px;">
 </iframe>
 </section>
 
