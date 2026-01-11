@@ -18,73 +18,46 @@ a{text-decoration:none;color:inherit}
 
 /* NAVBAR */
 header{
-  position:fixed;
-  top:0;width:100%;
-  background:#0a0f27;
-  z-index:100;
+  position:fixed; top:0; width:100%;
+  background:#0a0f27; z-index:100;
   box-shadow:0 5px 20px rgba(0,0,0,.5);
 }
 nav{
-  max-width:1200px;
-  margin:auto;
+  max-width:1200px; margin:auto;
   padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display:flex; justify-content:space-between; align-items:center;
 }
 .logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  font-size:1.6rem;
-  font-weight:700;
-  color:#38bdf8;
+  display:flex; align-items:center; gap:12px;
+  font-size:1.6rem; font-weight:700; color:#38bdf8;
 }
 .logo img{
-  width:45px;
-  height:45px;
-  border-radius:50%;
+  width:45px; height:45px; border-radius:50%;
   box-shadow:0 5px 15px rgba(0,0,0,.6);
 }
-nav ul{display:flex;gap:20px;list-style:none}
+nav ul{display:flex; gap:20px; list-style:none}
 nav ul li:hover{color:#38bdf8}
 .btn-wa{
-  background:#22c55e;
-  padding:10px 22px;
-  border-radius:30px;
-  font-weight:600;
-  color:#022c22;
+  background:#22c55e; padding:10px 22px;
+  border-radius:30px; font-weight:600; color:#022c22;
 }
 
 /* HERO */
 .hero{
   height:100vh;
   background:url('images/hero-bg.jpg') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:20px;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:20px;
 }
 .hero h1{
-  font-size:3rem;
-  color:#38bdf8;
+  font-size:3rem; color:#38bdf8;
   text-shadow:0 10px 30px rgba(0,0,0,.8);
 }
-.hero p{margin-top:10px;color:#cbd5f5}
+.hero p{margin-top:10px; color:#cbd5f5}
 
 /* SECTION */
-section{
-  padding:100px 20px;
-  max-width:1100px;
-  margin:auto;
-}
-h2{
-  text-align:center;
-  margin-bottom:50px;
-  color:#38bdf8;
-  font-size:2.2rem;
-}
+section{padding:100px 20px; max-width:1100px; margin:auto}
+h2{text-align:center; margin-bottom:50px; color:#38bdf8; font-size:2.2rem}
 
 /* GRID */
 .features,.packages,.gallery{
@@ -96,29 +69,20 @@ h2{
 /* 3D CARD */
 .card,.box{
   background:rgba(255,255,255,.1);
-  border-radius:20px;
-  padding:30px;
-  text-align:center;
+  border-radius:20px; padding:30px; text-align:center;
   backdrop-filter:blur(10px);
   box-shadow:0 20px 40px rgba(0,0,0,.4);
-  transform-style:preserve-3d;
-  transition:.4s;
+  transform-style:preserve-3d; transition:.4s;
 }
 .card:hover,.box:hover{
   transform:translateY(-15px) rotateX(5deg) rotateY(-5deg);
   box-shadow:0 35px 70px rgba(0,0,0,.6);
 }
-
-.price{
-  font-size:2.2rem;
-  font-weight:700;
-  color:#22c55e;
-}
+.price{font-size:2.2rem; font-weight:700; color:#22c55e}
 
 /* GALLERY */
 .gallery img{
-  width:100%;
-  border-radius:20px;
+  width:100%; border-radius:20px;
   box-shadow:0 20px 40px rgba(0,0,0,.5);
   transition:.4s;
 }
@@ -127,23 +91,16 @@ h2{
 /* CONTACT */
 .contact-box{
   background:rgba(255,255,255,.1);
-  padding:30px;
-  border-radius:20px;
-  line-height:1.8;
+  padding:30px; border-radius:20px; line-height:1.8;
   box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
 /* FLOAT WA */
 .wa-float{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:#22c55e;
-  color:#022c22;
-  padding:15px 25px;
-  border-radius:50px;
-  font-weight:700;
-  box-shadow:0 15px 40px rgba(34,197,94,.8);
+  position:fixed; right:20px; bottom:20px;
+  background:#22c55e; color:#022c22;
+  padding:15px 25px; border-radius:50px;
+  font-weight:700; box-shadow:0 15px 40px rgba(34,197,94,.8);
 }
 
 /* RESPONSIVE */
@@ -164,13 +121,13 @@ h2{
   </div>
   <ul>
     <li><a href="#features">Fasilitas</a></li>
-    <li><a href="#packages">Harga</a></li>
+    <li><a href="#packages">Info</a></li>
     <li><a href="#gallery">Galeri</a></li>
     <li><a href="#contact">Kontak</a></li>
   </ul>
   <a class="btn-wa"
-href="https://wa.me/6282320956424?text=Halo%20Admin%20WBS%20PlayStation%20%F0%9F%91%8B%0A%0ASaya%20mau%20booking%20main%20PS%0A%0A%F0%9F%8E%AE%20Nomor%20PS%20:%0A%F0%9F%93%85%20Tanggal%20:%0A%E2%8F%B0%20Jam%20Mulai%20:%0A%E2%8F%B3%20Total%20Jam%20:%0A%0ATerima%20kasih%20%F0%9F%99%8F"
-target="_blank">Chat WA</a>
+     href="https://wa.me/6282320956424?text=Halo%20Admin%20WBS%20PlayStation%20%F0%9F%91%8B%0A%0ASaya%20mau%20booking%20main%20PS%0A%0A%F0%9F%8E%AE%20Nomor%20PS%20:%0A%F0%9F%93%85%20Tanggal%20:%0A%E2%8F%B0%20Jam%20Mulai%20:%0A%E2%8F%B3%20Total%20Jam%20:%0A%0ATerima%20kasih%20%F0%9F%99%8F"
+     target="_blank">Chat WA</a>
 </nav>
 </header>
 
@@ -194,20 +151,24 @@ target="_blank">Chat WA</a>
 </div>
 </section>
 
+<!-- DIGANTI SESUAI PERMINTAAN -->
 <section id="packages">
-<h2>Paket & Harga</h2>
+<h2>Info & Keunggulan</h2>
 <div class="packages">
   <div class="box">
-    <h3>PS3 6 Jam</h3>
-    <div class="price">Rp 20.000</div>
+    <h3>💸 Harga Mulai</h3>
+    <div class="price">IDR 5K</div>
+    <p>Main hemat untuk semua kalangan</p>
   </div>
   <div class="box">
-    <h3>PS3 + TV 6 Jam</h3>
-    <div class="price">Rp 30.000</div>
+    <h3>🎮 Game Ter-Update</h3>
+    <div class="price">Banyak Pilihan</div>
+    <p>Game bola & game seru lainnya</p>
   </div>
   <div class="box">
-    <h3>PS3 + TV 12 Jam</h3>
-    <div class="price">Rp 50.000</div>
+    <h3>📺 Layar Nyaman</h3>
+    <div class="price">TV 32 Inch</div>
+    <p>Gambar jernih & nyaman di mata</p>
   </div>
 </div>
 </section>
